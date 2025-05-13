@@ -20,3 +20,22 @@
     console.log("Has hecho clic en Recursos");
     window.location.href = "recurso.html";
   });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const taula = document.getElementById("taulaComparativa");
+    const boto = document.getElementById("toggleTaula");
+
+    // Ocultar la tabla al inicio
+    taula.style.display = "none";
+
+    // Añadir listener al botón
+    boto.addEventListener("click", () => {
+      if (taula.style.display === "none") {
+        taula.style.display = "table";
+        boto.textContent = "Amagar taula";
+      } else {
+        taula.style.display = "none";
+        boto.textContent = "Mostrar taula";
+      }
+    });
+  });

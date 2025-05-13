@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Què és un LLM?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. Capçalera -->
+  <header>
+    <h1>Què és un LLM?</h1>
+  </header>
+
+  <!-- 2. Explicació bàsica -->
+  <section id="explicacio">
+    <h2>Explicació bàsica</h2>
+    <p>Els models de llenguatge a gran escala (LLMs) són sistemes d’intel·ligència artificial entrenats amb grans quantitats de text per generar respostes similars a les humanes.</p>
+    <ul>
+      <li>Assistents virtuals</li>
+      <li>Traducció automàtica</li>
+      <li>Redacció de textos</li>
+      <li>Anàlisi de sentiments</li>
+    </ul>
+  </section>
+
+  <!-- 3. Taula comparativa de models -->
+  <section id="taula-models">
+    <h2>Comparativa de models</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Model</th>
+          <th>Empresa</th>
+          <th>Codi obert</th>
+          <th>Accés</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>GPT-4</td>
+          <td>OpenAI</td>
+          <td>No</td>
+          <td>ChatGPT Plus</td>
+        </tr>
+        <tr>
+          <td>Claude</td>
+          <td>Anthropic</td>
+          <td>No</td>
+          <td>Poe</td>
+        </tr>
+        <tr>
+          <td>Gemini</td>
+          <td>Google</td>
+          <td>No</td>
+          <td>Disponible amb Google</td>
+        </tr>
+        <tr>
+          <td>LLaMA</td>
+          <td>Meta</td>
+          <td>Sí</td>
+          <td>Repositoris de codi</td>
+        </tr>
+      </tbody>
+    </table>
+    <button onclick="mostrarAmagarTaula()">Mostrar/Amagar taula</button>
+  </section>
+
+  <!-- 4. Enllaços a plataformes -->
+  <section id="enllacos">
+    <h2>Plataformes rellevants</h2>
+    <ul>
+      <li><a href="https://openai.com/" target="_blank">OpenAI</a></li>
+      <li><a href="https://poe.com/" target="_blank">Poe</a></li>
+      <li><a href="https://huggingface.co/" target="_blank">Hugging Face</a></li>
+    </ul>
+  </section>
+
+  <!-- 5. Riscos ètics -->
+  <section id="riscs">
+    <h2>Riscos ètics</h2>
+    <ul>
+      <li>Desinformació</li>
+      <li>Biaixos</li>
+      <li>Privacitat</li>
+    </ul>
+  </section>
+
+  <!-- 6. Secció opcional: trivia o curiositats -->
+  <section id="trivia">
+    <h2>Trivia o curiositats</h2>
+    <p>Sabies que alguns LLMs tenen més de 100.000 milions de paràmetres?</p>
+    <button onclick="alert('Correcte!')">Fes clic si ho sabies</button>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

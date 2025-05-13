@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Models de LLM</title>
+  <title>Models de LLM - Comparativa Detallada</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,49 +17,214 @@
   </header>
 
   <main>
-    <section>
+    <section id="intro-models">
+      <h2>Els principals models de llenguatge actuals</h2>
+      <p>Els models de llenguatge a gran escala (LLM) han evolucionat ràpidament en els últims anys. Aquesta pàgina ofereix una visió detallada dels models més rellevants del mercat, amb les seves característiques principals i diferències clau.</p>
+    </section>
+
+    <section id="comparativa">
       <h2>Comparativa detallada</h2>
-      <table>
-        <thead>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Empresa</th>
+              <th>Versió actual</th>
+              <th>Codi obert</th>
+              <th>Paràmetres</th>
+              <th>Accés</th>
+              <th>Idiomes</th>
+              <th>Especialització</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>GPT-4</strong></td>
+              <td>OpenAI</td>
+              <td>GPT-4-turbo (2023)</td>
+              <td>No</td>
+              <td>~1.8T (estimats)</td>
+              <td>ChatGPT Plus ($20/mes)</td>
+              <td>Multilingüe (≥50)</td>
+              <td>Generalista, creativitat</td>
+            </tr>
+            <tr>
+              <td><strong>Claude</strong></td>
+              <td>Anthropic</td>
+              <td>Claude 3 (2024)</td>
+              <td>No</td>
+              <td>No publicats</td>
+              <td>Poe, API Anthropic</td>
+              <td>Anglès (altres limitats)</td>
+              <td>Seguretat, raonament</td>
+            </tr>
+            <tr>
+              <td><strong>Gemini</strong></td>
+              <td>Google</td>
+              <td>Gemini 1.5 (2024)</td>
+              <td>Parcial</td>
+              <td>Fins a 1.56T</td>
+              <td>Google AI Studio</td>
+              <td>Multilingüe (≥40)</td>
+              <td>Integració Google</td>
+            </tr>
+            <tr>
+              <td><strong>LLaMA</strong></td>
+              <td>Meta</td>
+              <td>LLaMA 2 (2023)</td>
+              <td>Sí</td>
+              <td>7B a 70B</td>
+              <td>Repositori GitHub</td>
+              <td>Multilingüe (≥20)</td>
+              <td>Investigació</td>
+            </tr>
+            <tr>
+              <td><strong>Mistral</strong></td>
+              <td>Mistral AI</td>
+              <td>Mixtral 8x7B (2023)</td>
+              <td>Sí</td>
+              <td>7B (per expert)</td>
+              <td>HuggingFace</td>
+              <td>Principalment europeus</td>
+              <td>Eficiència</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="detalls-models">
+      <h2>Descripció detallada dels models</h2>
+      
+      <article class="model-card">
+        <h3>GPT-4 (OpenAI)</h3>
+        <p>L'últim model d'OpenAI, amb capacitats multimodals (text i imatges). Notable per la seva fluïdesa i creativitat en la generació de text.</p>
+        <ul>
+          <li><strong>Fortaleses</strong>: Excel·lent comprensió del context, suport a llargs contextos (fins a 128k tokens)</li>
+          <li><strong>Debilitats</strong>: Tendència a "al·lucinar" fets, cost elevat d'ús</li>
+          <li><strong>Casos d'ús</strong>: Assistència general, programació, creació de continguts</li>
+        </ul>
+      </article>
+
+      <article class="model-card">
+        <h3>Claude 3 (Anthropic)</h3>
+        <p>Dissenyat amb èmfasi en la seguretat i l'alineació amb valors humans. Menys propens a generar contingut nociu.</p>
+        <ul>
+          <li><strong>Fortaleses</strong>: Raonament complex, memòria de context llarga (fins a 200k tokens)</li>
+          <li><strong>Debilitats</strong>: Menys capacitat creativa, suport limitat a idiomes no anglesos</li>
+          <li><strong>Casos d'ús</strong>: Anàlisi documental, resums llargs, aplicacions empresarials</li>
+        </ul>
+      </article>
+
+      <article class="model-card">
+        <h3>Gemini 1.5 (Google)</h3>
+        <p>La resposta de Google als models d'OpenAI, amb integració profunda als serveis de Google.</p>
+        <ul>
+          <li><strong>Fortaleses</strong>: Multimodal (text, imatges, àudio), context de fins a 1 milió de tokens</li>
+          <li><strong>Debilitats</strong>: Menys transparent en les seves limitacions, accés més restrictiu</li>
+          <li><strong>Casos d'ús</strong>: Cerca augmentada, anàlisi de dades, integració amb ecosistema Google</li>
+        </ul>
+      </article>
+
+      <article class="model-card">
+        <h3>LLaMA 2 (Meta)</h3>
+        <p>Família de models oberts que ha democratitzat l'accés a LLMs d'alt rendiment.</p>
+        <ul>
+          <li><strong>Fortaleses</strong>: Codi completament obert, lleuger comparat amb altres models</li>
+          <li><strong>Debilitats</strong>: Requereix més coneixement tècnic per implementar</li>
+          <li><strong>Casos d'ús</strong>: Investigació acadèmica, desenvolupament d'aplicacions personalitzades</li>
+        </ul>
+      </article>
+
+      <article class="model-card">
+        <h3>Mistral/Mixtral (Mistral AI)</h3>
+        <p>Model europeu d'alt rendiment amb arquitectura de barreja d'experts (MoE).</p>
+        <ul>
+          <li><strong>Fortaleses</strong>: Alta eficiència, rendiment comparable a models més grans</li>
+          <li><strong>Debilitats</strong>: Comunitat més petita, menys integracions</li>
+          <li><strong>Casos d'ús</strong>: Aplicacions locals, empreses europees, casos amb requeriments d'eficiència</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="seleccio-model">
+      <h2>Com triar el model adequat?</h2>
+      <p>La selecció del model depèn de múltiples factors:</p>
+      
+      <div class="selection-criteria">
+        <h3>Factors a considerar:</h3>
+        <ol>
+          <li>
+            <strong>Cost</strong>:
+            <ul>
+              <li>Models oberts: gratuïts però requereixen infraestructura</li>
+              <li>Models comercials: pagament per ús o subscripció</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Requeriments tècnics</strong>:
+            <ul>
+              <li>Hardware necessari per a models autoallotjats</li>
+              <li>Connexions API per a models en núvol</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Cas d'ús</strong>:
+            <ul>
+              <li>Creativitat vs precisió</li>
+              <li>Suport multilingüe</li>
+              <li>Necessitat de multimodalitat</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Privacitat</strong>:
+            <ul>
+              <li>On es processen les dades?</li>
+              <li>Polítiques de retenció de dades</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+
+      <div class="use-case-recommendations">
+        <h3>Recomanacions per cas d'ús:</h3>
+        <table>
           <tr>
-            <th>Model</th>
-            <th>Empresa</th>
-            <th>Codi obert</th>
-            <th>Accés</th>
+            <th>Cas d'ús</th>
+            <th>Model recomanat</th>
           </tr>
-        </thead>
-        <tbody>
           <tr>
-            <td>GPT-4</td>
-            <td>OpenAI</td>
-            <td>No</td>
-            <td>ChatGPT Plus</td>
+            <td>Desenvolupament d'aplicacions personalitzades</td>
+            <td>LLaMA 2 o Mistral (per control total)</td>
           </tr>
           <tr>
-            <td>Claude</td>
-            <td>Antrhopic</td>
-            <td>No</td>
-            <td>Poe</td>
+            <td>Generació de contingut creatiu</td>
+            <td>GPT-4-turbo</td>
           </tr>
           <tr>
+            <td>Anàlisi de documents llargs</td>
+            <td>Claude 3</td>
+          </tr>
+          <tr>
+            <td>Integració amb ecosistema Google</td>
             <td>Gemini</td>
-            <td>Google</td>
-            <td>Parcial</td>
-            <td>Bard</td>
           </tr>
           <tr>
-            <td>LLaMA</td>
-            <td>Meta</td>
-            <td>Sí</td>
-            <td>Repositori GitHub</td>
+            <td>Projectes amb requeriments d'eficiència</td>
+            <td>Mixtral</td>
           </tr>
-        </tbody>
-      </table>
+        </table>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Equip Web LLMs</p>
+    <div class="footer-content">
+      <p>© 2025 Equip Web LLMs</p>
+      <p>Darrera actualització: Juny 2024</p>
+      <p>Contacte: info@llmweb.cat</p>
+    </div>
   </footer>
 </body>
 </html>

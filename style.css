@@ -99,6 +99,7 @@ button:hover {
   table th, table td {
     font-size: 0.9rem;
   }
+<<<<<<< Updated upstream
 }
 
 /* Tema Clar */
@@ -147,3 +148,6 @@ body.tema-clar button {
 body.tema-clar button:hover {
   background-color: #2980b9;
 }
+=======
+}
+>>>>>>> Stashed changes

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Què és un LLM?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. Capçalera amb menú de navegació -->
+  <header>
+    <h1>Què és un LLM?</h1>
+    <button onclick="canviarTema()">Canvia el tema</button>
+    <nav>
+      <button id="inicio">Inici</button>
+      <button id="models">Models</button>
+      <button id="resources">Recursos</button>
+    </nav>
+  </header>
+
+  <!-- 2. Explicació bàsica -->
+  <section id="explicacio">
+    <h2>Explicació bàsica</h2>
+    <p>Els models de llenguatge a gran escala (LLMs) són sistemes d'intel·ligència artificial entrenats amb grans quantitats de text per generar respostes similars a les humanes.</p>
+    <ul>
+      <li>Assistents virtuals - Ex: ChatGPT, Alexa, Siri</li>
+      <li>Traducció automàtica - Traducció entre idiomes amb context</li>
+      <li>Redacció de textos - Generació d'articles, correus, etc.</li>
+      <li>Anàlisi de sentiments - Detecció de tones emocionals en text</li>
+    </ul>
+  </section>
+
+  <!-- 3. Taula comparativa de models -->
+<section id="comparativa">
+  <h2>Comparativa de models</h2>
+
+  <button id="toggleTaula">Mostrar taula</button>
+
+  <table id="taulaComparativa">
+    <thead>
+      <tr>
+        <th>Model</th>
+        <th>Empresa</th>
+        <th>Codi obert</th>
+        <th>Accés</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>GPT-4</td>
+        <td>OpenAI</td>
+        <td>No</td>
+        <td>ChatGPT Plus</td>
+      </tr>
+      <tr>
+        <td>Claude</td>
+        <td>Anthropic</td>
+        <td>No</td>
+        <td>Poe</td>
+      </tr>
+      <tr>
+        <td>Gemini</td>
+        <td>Google</td>
+        <td>No</td>
+        <td>Disponible amb Google</td>
+      </tr>
+      <tr>
+        <td>LLaMA</td>
+        <td>Meta</td>
+        <td>Sí</td>
+        <td>Repositoris de codi</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+  <!-- 4. Enllaços a plataformes -->
+  <section id="enllacos">
+    <h2>Plataformes rellevants</h2>
+    <ul>
+      <li><a href="https://openai.com/" target="_blank">OpenAI</a> - Creadors de ChatGPT i els models GPT</li>
+      <li><a href="https://poe.com/" target="_blank">Poe</a> - Plataforma que agrega múltiples models d'IA</li>
+      <li><a href="https://huggingface.co/" target="_blank">Hugging Face</a> - Comunitat i repositori de models d'IA oberts</li>
+    </ul>
+  </section>
+
+  <!-- 5. Riscos ètics -->
+  <section id="riscs">
+    <h2>Riscos ètics</h2>
+    <ul>
+      <li>Desinformació - Capacitat de generar contingut fals però persuasiu</li>
+      <li>Biaixos - Reflecteixen prejudicis dels seus datos d'entrenament</li>
+      <li>Privacitat - Riscos de filtracions d'informació sensible</li>
+      <li>Impacte laboral - Automatització de feines creatives</li>
+    </ul>
+  </section>
+
+  <!-- 6. Trivia o curiositats -->
+  <section id="trivia">
+    <h2>Trivia o curiositats</h2>
+    <p>Sabies que alguns LLMs tenen més de 100.000 milions de paràmetres? Això equival a aproximadament el nombre de connexions neuronals en un cervell humà.</p>
+    <p>El cost d'entrenar models com GPT-4 pot superar els 100 milions de dòlars en computació.</p>
+    <button onclick="alert('Correcte! Molts models actuals superen aquesta xifra!')">Fes clic si ho sabies</button>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
